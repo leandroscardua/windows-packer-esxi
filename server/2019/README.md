@@ -1,5 +1,4 @@
-
-Utilizando packer para criar uma imagem customizada no ESXI ( Versao Gratuita )
+Utiliza o packer para criar uma imagem customizada do Windows Server 2019 no ESXI ( Versão Gratuita )
 
 # Programas:
 --------
@@ -7,7 +6,6 @@ Utilizando packer para criar uma imagem customizada no ESXI ( Versao Gratuita )
 - Packer : v1.6.5
 - ESXI: 6.7.0 Update 3 (Build 17167734)
 - Ovftool: 4.4.0 (build-16360108)
-
 
 # Requerimentos:
 --------
@@ -19,11 +17,11 @@ Utilizando packer para criar uma imagem customizada no ESXI ( Versao Gratuita )
 --------
 
     .
-    ├── ws2019.json                   # arquivo de configuracao do packer
-    ├── variables.json                # arquivo de configuracao para conectar no ESXI
-    └── Autounattend.xml              # arquivo para fazer a instalacao automatica do windows.
+    ├── ws2019.json                   # arquivo de configuração do packer
+    ├── variables.json                # arquivo de configuração para conectar no ESXI
+    └── Autounattend.xml              # arquivo para fazer a instalação automatica do windows.
      
-
 # Execucao:
 --------
+
     packer build -var-file variables.json ws2019.json
