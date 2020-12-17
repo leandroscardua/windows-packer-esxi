@@ -19,11 +19,10 @@ Utilizando packer para criar uma imagem customizada no ESXI ( Versao Gratuita )
 --------
 
     .
-    ├── build                   # Compiled files (alternatively `dist`)
-    ├── docs                    # Documentation files (alternatively `doc`)
-    ├── src                     # Source files (alternatively `lib` or `app`)
-    └── README.md
-
+    ├── ws2019.json                   # arquivo de configuracao do packer
+    ├── variables.json                # arquivo de configuracao para conectar no ESXI
+    └── Autounattend.xml              # arquivo para fazer a instalacao automatica do windows.
+     
 
 # Execucao:
 --------
